@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="{% static 'css/registration.css' %}">
+</head>
+<body>
+    <h1>Регистрация</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <p>Your username:</p>
+        <input placeholder="юзернейм"> <br>
+        <p>Password:</p>
+        <input placeholder="пароль"> <br>
+        <p>Repeat password:</p>
+        <input placeholder="повторите пароль"> <br> <br>
+        <a><button type="submit"> Зарегистрироваться</button></a>
+    </form>
+</body>
+</html>
+<!--не будь лашарой-->
+<!--действуй-->
+<!--тормоз-->
